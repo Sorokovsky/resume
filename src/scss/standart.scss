@@ -1,10 +1,13 @@
 ._container{
-    max-width: $maxWidthContainer + 20 + 'px';
+    max-width: $maxWidthContainer + 20 + rem;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0 10rem;
+}
+ul,li,ol{
+    list-style: none;
 }
 body{
-    font-size: $mainFontSize + 'px';
+    font-size: $mainFontSize + rem;
     
     font-family: $mainFontFamily;
 }

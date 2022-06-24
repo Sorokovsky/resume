@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    font-size: 1px;
+}
 a{
     color: inherit;
     font-family: inherit;
@@ -18,4 +21,9 @@ ul,ol,li{
     font-weight: inherit;
     font-style: inherit;
     letter-spacing: none;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }

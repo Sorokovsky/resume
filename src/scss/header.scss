@@ -1,0 +1,110 @@
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100000;
+    width: 100%;
+    background-color: $headerBg;
+    padding: 10rem 0;
+    &__logo{
+        display: block;
+        width: 50rem;
+        height: 50rem;
+        border-radius: 50%;
+        overflow: hidden;
+        position: relative;
+        z-index: 101;
+        flex: 0 0 50rem;
+    }
+    &__container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__menu{
+        flex: 1 1 auto;
+    }
+    &__list{
+        gap: 30rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        a{
+            text-decoration: none;
+            color: $menuTextColor;
+            font-weight: 700;
+            font-size: 18rem;
+        }
+    }
+}
+.burger{
+    display: none;
+}
+@media screen and (max-width:752px){
+    ._lock{
+        overflow: hidden;
+    }
+    .header{
+        &__menu{
+            position: fixed;
+            z-index: 100;
+            background-color: rgba($headerBg, 0.7);
+            top: 70rem;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            overflow-x: scroll;
+            transition: .3s all linear;
+            &._active{
+                left: 0;
+                opacity: 1;
+            }
+        }
+        &__list{
+            gap: 15rem;
+            padding-top: 30rem;
+            padding-bottom: 100rem;
+            flex-direction: column;
+        }
+        &__item a{
+            font-size: 25rem;
+        }
+    }
+    .burger{
+        display: block;
+        top: -10rem;
+        width: 40rem;
+        position: relative;
+        transition: .3s all linear;
+        &::before, &::after, &-body{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: $menuTextColor;
+            height: 2rem;
+            display: block;
+            transition: .3s all linear;
+        }
+        &-body{
+            top: 10rem;
+            &._active{
+                transform: scale(0);
+            }
+        }
+        &:after{
+            top: 20rem;
+        }
+        &._active{
+            top: -20rem;
+            &::before{
+                transform: rotate(45deg) translate(10rem, 15rem);
+            }
+            &::after{
+                transform: rotate(-45deg) translate(-2rem, -3rem);
+            }
+        }
+    }
+}
