@@ -6,7 +6,7 @@ export const path = {
     src: {
         html: `${srcFolder}/*.html`,
         scss: `${srcFolder}/scss/style.scss`,
-        js: `${srcFolder}/ts/app.ts`,
+        js: `${srcFolder}/js/app.js`,
         files: `${srcFolder}/.htaccess`,
         images: `${srcFolder}/img/**/*.{png,jpg,jpeg,ico,gif}`,
         svg: `${srcFolder}/img/**/*.svg`,
@@ -24,7 +24,7 @@ export const path = {
         html: `${srcFolder}/**/*.html`,
         scss: `${srcFolder}/scss/**/*.scss`,
         files: `${srcFolder}/.htaccess`,
-        js: `${srcFolder}/ts/**/*.ts`,
+        js: `${srcFolder}/js/**/*.js`,
         fonts: `${srcFolder}/fonts/**/*.{ttf,otf}`,
         images: `${srcFolder}/img/**/*.{png,jpg,jpeg,ico,gif,svg}`,
     },

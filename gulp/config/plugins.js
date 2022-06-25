@@ -22,7 +22,6 @@ import fs from 'fs';
 import fonter from 'gulp-fonter';
 import ttf2woff2 from 'gulp-ttf2woff2';
 import gulpIf from "gulp-if";
-import ts from 'gulp-typescript';
 export const plugins = {
     gulp,
     browserSync,
@@ -48,5 +47,4 @@ export const plugins = {
     fonter,
     ttf2woff2,
     gulpIf,
-    ts,
 }
