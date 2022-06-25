@@ -1,6 +1,6 @@
 import { app } from "../../gulpfile.js";
 export const js = async() => {
-    return app.plugins.gulp.src(app.path.src.js, {sourcemaps: true})
+    return app.plugins.gulp.src(app.path.src.js, {sourcemaps: true, allowEmpty: true})
         .pipe(app.plugins.gulpIf(app.isDev, app.plugins.gulpPlumber(
          (app.plugins.notify.onError({
             title: "JS",

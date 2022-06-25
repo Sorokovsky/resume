@@ -1,2 +1,2 @@
-export const burger = document.querySelector(".burger");
-export const menu = document.querySelector('.header__menu');
+export const burger:Element | null = document.querySelector(".burger");
+export const menu:Element |null = document.querySelector('.header__menu');

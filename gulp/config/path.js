@@ -24,7 +24,7 @@ export const path = {
         html: `${srcFolder}/**/*.html`,
         scss: `${srcFolder}/scss/**/*.scss`,
         files: `${srcFolder}/.htaccess`,
-        js: `${srcFolder}/ts/**/*.{js,ts}`,
+        js: `${srcFolder}/ts/**/*.ts`,
         fonts: `${srcFolder}/fonts/**/*.{ttf,otf}`,
         images: `${srcFolder}/img/**/*.{png,jpg,jpeg,ico,gif,svg}`,
     },
