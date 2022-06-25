@@ -1,5 +1,4 @@
 import { isWebp, burgerMenu } from "./modules/functions.js";
-const burger = document.querySelector(".burger");
-const menu = document.querySelector('.header__menu');
+import { burger, menu } from "./modules/variables.js";
 isWebp();
 burgerMenu(burger, menu);
