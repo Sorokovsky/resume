@@ -175,3 +175,15 @@ body {
     transform: rotate(-45deg) translate(-2rem, -3rem);
   }
 }
+.about {
+  padding-top: 100rem;
+}
+.about__avatar {
+  width: 300rem;
+  height: 300rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.about__avatar img {
+  object-position: left center;
+}

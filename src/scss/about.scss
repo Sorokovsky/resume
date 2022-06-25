@@ -1,0 +1,12 @@
+.about{
+    padding-top: 100rem;
+    &__avatar{
+        width: 300rem;
+        height: 300rem;
+        border-radius: 50%;
+        overflow: hidden;
+        img{
+            object-position: left center;
+        }
+    }
+}
