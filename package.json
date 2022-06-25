@@ -37,7 +37,7 @@
   },
   "scripts": {
     "dev": "concurrently \"tsc -w\" \"gulp dev\"",
-    "build": "concurrently \"tsc -w\" \"gulp build --build\""
+    "build": "concurrently \"tsc\" \"gulp build --build\""
   },
   "author": "",
   "license": "ISC"
