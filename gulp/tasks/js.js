@@ -7,6 +7,7 @@ export const js = async() => {
             message: `Error: <%= error.message %>`
         })
     ))))
+    .pipe(app.plugins.ts({noImplicitAny: true}))
     .pipe(app.plugins.webpack({
         mode: app.isDev ? 'development': 'production',
         output: {
